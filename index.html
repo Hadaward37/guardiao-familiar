@@ -137,6 +137,29 @@ nav{
 .fi-t strong{display:block;font-size:12px;font-weight:700;margin-bottom:2px}
 .fi-t span{font-size:11px;color:rgba(255,255,255,0.38)}
 
+/* ── VALUE PROPOSITION ── */
+.vp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left}
+.vp-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:18px;padding:28px;transition:all .3s;position:relative;overflow:hidden}
+.vp-card:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,0.35)}
+.vp-icon{width:48px;height:48px;border:1px solid;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px}
+.vp-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
+.vp-card p{font-size:13px;color:rgba(255,255,255,0.42);line-height:1.7}
+.vp-card p em{font-style:normal;color:#00D2FF;font-weight:600}
+
+/* ── COMPARISON ── */
+.compare-wrap{padding:0 24px 80px}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px;margin:0 auto}
+.compare-col{border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.compare-col.bad{background:rgba(255,50,50,0.04);border:1px solid rgba(255,50,50,0.15)}
+.compare-col.good{background:rgba(0,210,255,0.04);border:1px solid rgba(0,210,255,0.2);box-shadow:0 0 40px rgba(0,210,255,0.06)}
+.compare-title{font-size:15px;font-weight:800;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.compare-col.bad .compare-title{color:#ff6b6b}
+.compare-col.good .compare-title{color:#00D2FF}
+.compare-item{font-size:13px;color:rgba(255,255,255,0.5);padding:8px 12px;border-radius:8px;line-height:1.5}
+.compare-col.bad .compare-item{background:rgba(255,50,50,0.04)}
+.compare-col.good .compare-item{background:rgba(0,210,255,0.04);color:rgba(255,255,255,0.7)}
+.compare-col.good .compare-item strong{color:#00D2FF}
+
 /* ── PROBLEM ── */
 .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .pcard{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:16px;padding:28px;transition:all .3s;position:relative;overflow:hidden;cursor:default}
@@ -248,6 +271,9 @@ footer{border-top:1px solid rgba(0,210,255,0.06);padding:36px 24px;display:flex;
   .problem-grid,.feat-grid,.tgrid{grid-template-columns:1fr}
   .steps-grid{grid-template-columns:1fr}
   .steps-grid::before{display:none}
+  .vp-grid{grid-template-columns:1fr}
+  .compare-grid{grid-template-columns:1fr}
+  .compare-wrap{padding:0 20px 60px}
   .pricing-grid{grid-template-columns:1fr}
   .section{padding:60px 20px}
   .pricing-wrap{padding:60px 20px}
@@ -340,6 +366,69 @@ footer{border-top:1px solid rgba(0,210,255,0.06);padding:36px 24px;display:flex;
         <div class="fitem"><div class="fi-ic">🧠</div><div class="fi-t"><strong>Análise de risco por IA</strong><span>Detecta padrões suspeitos com 99% de precisão</span></div></div>
         <div class="fitem"><div class="fi-ic">📱</div><div class="fi-t"><strong>Alerta em segundos</strong><span>Notificação push no seu celular em tempo real</span></div></div>
         <div class="fitem"><div class="fi-ic">✅</div><div class="fi-t"><strong>Lista branca de confiança</strong><span>Contatos aprovados passam sem alerta</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUE PROPOSITION -->
+<section class="section section-center fade-up" id="por-que">
+  <div class="stag">Por que o FamShield</div>
+  <h2 class="stitle">O único sistema que avisa <em style="font-style:normal;color:#00D2FF">antes</em> do golpe acontecer</h2>
+  <p class="ssub" style="margin:0 auto 56px">Enquanto bancos só te avisam depois que o dinheiro sumiu, o FamShield intercepta a ameaça em tempo real.</p>
+  <div class="vp-grid">
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(0,210,255,0.07);border-color:rgba(0,210,255,0.18)">🛡️</div>
+      <h3>Proteção proativa, não reativa</h3>
+      <p>O banco bloqueia <em>depois</em>. Nós avisamos <em>antes</em>. Sua família tem a chance de pensar antes de apertar "confirmar".</p>
+    </div>
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(0,255,136,0.07);border-color:rgba(0,255,136,0.18)">😌</div>
+      <h3>Tranquilidade no dia a dia</h3>
+      <p>Pare de se preocupar toda vez que seus pais ficam sozinhos com o celular. Você recebe o alerta. Eles continuam vivendo normalmente.</p>
+    </div>
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(245,166,35,0.07);border-color:rgba(245,166,35,0.18)">👴</div>
+      <h3>Seus pais não precisam fazer nada</h3>
+      <p>Eles não mudam rotina, não baixam nenhum app, não precisam entender de tecnologia. Você configura uma vez e o sistema trabalha.</p>
+    </div>
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(0,210,255,0.07);border-color:rgba(0,210,255,0.18)">⚡</div>
+      <h3>Alerta em segundos, não horas</h3>
+      <p>Em menos de 3 segundos você já sabe que seu familiar está prestes a mandar dinheiro para um destino suspeito. Tempo suficiente para ligar e parar o golpe.</p>
+    </div>
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(255,50,50,0.07);border-color:rgba(255,50,50,0.18)">🚫</div>
+      <h3>Sem falsos alarmes</h3>
+      <p>A lista branca aprende os contatos de confiança. Farmácia, mercado, filhos — passam sem alerta. Só o suspeito dispara o sistema.</p>
+    </div>
+    <div class="vp-card fade-up">
+      <div class="vp-icon" style="background:rgba(245,166,35,0.07);border-color:rgba(245,166,35,0.18)">💰</div>
+      <h3>R$ 99/mês ou R$ 50.000 perdidos?</h3>
+      <p>Um único golpe pode tirar a aposentadoria de anos. O custo de não ter proteção é infinitamente maior do que o custo de ter.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<div class="compare-wrap fade-up">
+  <div class="section" style="padding-top:0">
+    <div class="compare-grid">
+      <div class="compare-col bad">
+        <div class="compare-title"><span>❌</span> Sem o FamShield</div>
+        <div class="compare-item">Você fica sabendo depois que o dinheiro sumiu</div>
+        <div class="compare-item">Seus pais ficam vulneráveis 24h por dia</div>
+        <div class="compare-item">O banco diz "não podemos reverter o Pix"</div>
+        <div class="compare-item">Você se culpa por não ter feito nada</div>
+        <div class="compare-item">Família perde anos de economia</div>
+      </div>
+      <div class="compare-col good">
+        <div class="compare-title"><span>✓</span> Com o FamShield</div>
+        <div class="compare-item">Você recebe alerta <strong>antes</strong> da transação</div>
+        <div class="compare-item">Monitoramento ativo 24h por dia</div>
+        <div class="compare-item">Você liga para seus pais e cancela a tempo</div>
+        <div class="compare-item">Tranquilidade de saber que está protegido</div>
+        <div class="compare-item">Família continua unida e segura</div>
       </div>
     </div>
   </div>
