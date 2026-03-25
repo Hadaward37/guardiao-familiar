@@ -879,14 +879,22 @@
   @media (max-width: 768px) {
     nav { padding: 0 20px; }
     .nav-links { display: none; }
+    .nav-mobile-cta { display: flex !important; }
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
     .problem-grid, .how-steps, .pricing-grid, .testimonials-grid, .features-grid {
       grid-template-columns: 1fr;
     }
     .how-steps::before { display: none; }
     .pricing-card.featured { transform: scale(1); }
-    footer { flex-direction: column; text-align: center; }
-    .hero h1 { letter-spacing: -1px; }
+    footer { flex-direction: column; text-align: center; gap: 12px; }
+    .hero h1 { letter-spacing: -1px; font-size: clamp(28px, 8vw, 48px); }
+    .hero-sub { font-size: 15px; }
+    .hero { padding: 90px 20px 60px; }
+    .hero-btns { flex-direction: column; align-items: stretch; }
+    .hero-btns a { text-align: center; }
+    .hero-proof { gap: 12px; }
+    section { padding-left: 20px !important; padding-right: 20px !important; }
+    .mockup-section { padding: 40px 20px 60px; }
   }
 
   /* ── FADE IN ── */
@@ -917,6 +925,10 @@
     <a href="#precos">Preços</a>
     <a href="https://famshield.vercel.app" class="nav-cta">Criar conta grátis →</a>
   </div>
+  <!-- Botão CTA visível só no mobile -->
+  <a href="https://famshield.vercel.app" class="nav-mobile-cta" style="display:none; background: linear-gradient(135deg,#00D2FF,#0099cc); color:#020408; font-weight:700; font-size:13px; padding:8px 16px; border-radius:8px; text-decoration:none;">
+    Começar grátis →
+  </a>
 </nav>
 
 <!-- HERO -->
